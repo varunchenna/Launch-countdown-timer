@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Text:ital,wght@0,700;1,700&display=swap');
+
+:root{
+
+--White: hsl(0, 0%, 100%);
+--Darkblue1: hsl(236, 21%, 26%);
+--Darkblue2: hsl(235, 16%, 14%);
+--Blackblue: hsl(234, 17%, 12%);
+--Grayishblue: hsl(237, 18%, 59%);
+--Softred: hsl(345, 95%, 68%);
+}
+
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: var(--Darkblue2);
+    font-family:"Red Hat Text",sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.hills{
+    position: absolute;
+    bottom: 0;
+}
+
+.stars{
+    position: absolute;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social ul li {
+    margin: 0 20px;
+}
+
+.social{
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    z-index: 999;
+}
+
+.timeout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-between;
+    text-align: center;
+}
+
+.timeout div{
+    margin: 10px;
+}
+.timeout p{
+    background-color: var(--Darkblue1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--Softred);
+    font-size: 40px;
+}
+.timeout h3{
+    color: var(--Grayishblue);
+    font-weight: 700;
+    border-radius: 1rem;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.container h1{
+    color: var(--White);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+
+@media ( min-width:1440px) {
+    .stars img, .hills img{
+        width: 1600px;
+    }
+    
+}

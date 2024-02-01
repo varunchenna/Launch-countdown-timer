@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Launch-CountDown</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stars">
+      <img src="./images/bg-stars.svg" alt="">
+    </div>
+    <h1>We're Launching Soon</h1>
+    <div class="timeout">
+      <div class="b">
+        <p id="days">{Time}</p>
+        <h3>Days</h3>
+      </div>
+      <div>
+        <p id="hours">{Time}</p>
+        <h3>Hours</h3>
+      </div>
+      <div>
+        <p id="minutes">{Time}</p>
+        <h3>Minutes</h3>
+      </div>
+      <div>
+        <p id="seconds">{Time}</p>
+        <h3>Seconds</h3>
+      </div>
+    </div>
+    <div class="social">
+      <ul>
+        <li><img src="./images/icon-facebook.svg" alt=""></li>
+        <li><img src="./images/icon-pinterest.svg" alt=""></li>
+        <li><img src="./images/icon-instagram.svg" alt=""></li>
+      </ul>
+    </div>
+    <div class="hills">
+      <img src="./images/pattern-hills.svg" alt="">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
